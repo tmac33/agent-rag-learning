@@ -1,0 +1,17 @@
+
+RAG vs Fine-tuning — when to use which:
+
+RAG is better when:
+- You need up-to-date information (knowledge base can be updated without retraining)
+- You need citations and source attribution
+- You have domain-specific documents to search over
+- Budget is limited (no GPU training costs)
+
+Fine-tuning is better when:
+- You need to change the model's style, tone, or format
+- You need consistent behavior on specific tasks
+- You have high-quality training examples
+- Latency matters (no retrieval step needed)
+
+In practice, many production systems combine both: fine-tune for style,
+RAG for factual grounding.

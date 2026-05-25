@@ -1,0 +1,7 @@
+
+Retrieval-Augmented Generation (RAG) is a technique that enhances LLM responses
+by retrieving relevant information from a knowledge base before generating an answer.
+RAG was introduced by Facebook AI Research (now Meta AI) in 2020.
+The key insight is that LLMs can hallucinate facts, but if you provide them with
+retrieved evidence in the prompt, they generate more accurate and grounded responses.
+RAG does not require retraining the model, making it much cheaper than fine-tuning.

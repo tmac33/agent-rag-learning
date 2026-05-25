@@ -1,0 +1,9 @@
+
+The RAG pipeline consists of these stages:
+1. Document Loading: Read documents from sources like PDF, web pages, databases.
+2. Chunking: Split documents into smaller pieces (typically 256-1024 tokens).
+3. Embedding: Convert text chunks into numerical vectors using a model like text-embedding-3-small.
+4. Indexing: Store vectors in a vector database like Pinecone, pgvector, or ChromaDB.
+5. Retrieval: Given a user query, embed it and find similar chunks via cosine similarity.
+6. Generation: Pass the retrieved chunks as context to an LLM to generate the final answer.
+The quality of each stage affects the final output significantly.

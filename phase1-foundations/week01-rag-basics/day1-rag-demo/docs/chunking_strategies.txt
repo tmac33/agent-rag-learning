@@ -1,0 +1,15 @@
+
+Chunking is one of the most impactful decisions in RAG system design.
+
+Fixed-size chunking: Split every N tokens. Simple but may break mid-sentence.
+Sentence-based chunking: Split on sentence boundaries. Preserves meaning better.
+Semantic chunking: Use embeddings to detect topic shifts. Most sophisticated.
+Recursive character splitting: Try splitting on paragraphs, then sentences, then words.
+
+Key parameters:
+- Chunk size: 256 tokens gives precision, 1024 gives more context per chunk.
+- Chunk overlap: 50-100 tokens of overlap prevents losing information at boundaries.
+
+The optimal strategy depends on your documents and queries.
+Technical docs with clear sections work well with larger chunks.
+FAQs and Q&A pairs work well with small, precise chunks.
